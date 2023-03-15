@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <center>
+      <h1>Car export random bargraph</h1><br><br>
+    <canvas id="canvas" width="700" height="700"></canvas>
+    </center>
+    <script type="text/javascript">
+
+
+          var    id = setTimeout(drawfun,1000) ;
+              function drawfun(){
+
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+      context.beginPath();
+      context.fillStyle="black";
+      context.font = '12pt Calibri';
+      context.fillText('  0 -', 0, 500);
+      context.fillText('  20 -', 0, 400);
+        context.fillText('  40 -', 0, 300);
+        context.fillText('  60 -', 0, 200);
+          context.fillText('  80 -', 0, 100);
+            context.fillText('100 -', 0, 50);
+        context.fillText('120 -', 0, 5);
+        context.moveTo(30,500);
+        context.lineTo(30,0);
+        context.stroke();
+        context.beginPath();
+        context.moveTo(30,500);
+        context.lineTo(390,500);
+        context.stroke();
+
+
+  var height= Math.floor(Math.random() * 1000);
+
+ height= Math.floor(Math.random() * 500);
+   context.beginPath();
+      context.rect(30,500-height,30,height);
+      context.fillStyle="blue";
+      context.fill();
+      context.fillText('Jan', 30, 510);
+
+      context.stroke();
+      height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(60,500-height,30,height);
+      context.fillStyle="gray";
+      context.fill();
+      context.fillText('Feb', 60, 510);
+
+
+      context.stroke();
+       var height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(90,500-height,30,height);
+      context.fillStyle="lightblue";
+      context.fill();
+      context.fillText('March', 90, 510);
+      context.stroke
+     height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(120,500-height,30,height);
+      context.fillStyle="maroon";
+      context.fill();
+      context.fillText('April', 120, 510);
+
+      context.stroke();
+       height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(150,500-height,30,height);
+      context.fillStyle="gold";
+      context.fill();
+      context.fillText('May', 150, 510);
+
+      context.stroke();
+       height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(180,500-height,30,height);
+      context.fillStyle="silver";
+      context.fill();
+      context.fillText('June', 180, 510);
+
+      context.stroke();
+       height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(210,500-height,30,height);
+      context.fillStyle="purple";
+      context.fill();
+      context.fillText('July', 210, 510);
+
+      context.stroke();
+       height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(240,500-height,30,height);
+      context.fillStyle="orange";
+      context.fill();
+      context.fillText('Agst', 240, 510);
+
+      context.stroke();
+        height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(270,500-height,30,height);
+      context.fillStyle="green";
+      context.fill();
+      context.fillText('Sep', 270, 510);
+
+      context.stroke();
+       height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(300,500-height,30,height);
+      context.fillStyle="black";
+      context.fill();
+  context.fillText('oct', 300, 510);
+
+      context.stroke();
+        height= Math.floor(Math.random() * 500);
+context.beginPath();
+      context.rect(330,500-height,30,height);
+      context.fillStyle="brown";
+      context.fill();
+      context.fillText('Nov', 330, 510);
+
+      context.stroke();
+       height= Math.floor(Math.random() * 500);
+context.beginPath();
+  context.fillStyle="yellow";
+      context.fillRect(360,500-height,30,height);
+  context.fillText('Dec', 360, 510);
+      context.stroke();
+
+
+  var    clean=setTimeout(clearfun,1000) ;
+      function clearfun(){
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+  drawfun();
+      }
+
+    }
+
+
+        </script>
+  </body>
+</html>
